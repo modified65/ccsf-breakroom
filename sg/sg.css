@@ -1,0 +1,44 @@
+.sg-section {
+    border-top: 1px #ccc dotted;
+    margin-bottom: 75px;
+}
+
+.sg-header {
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.sg-heading {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    color: #333;
+    margin-top: 50px;
+}
+
+.sg-p {
+    color: #333;
+}
+
+.sg-highlight {
+    border: 1px #ccc solid;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.sg-color {
+    height: 100px;
+}
+
+.sg-example {
+    font-size: 12px;
+    font-weight: bold;
+    color: #bbb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px dotted #bbb;
+    margin-bottom: 20px;
+}
+
+ul[class="nav nav-tabs"] {
+    margin-top: 20px;
+}

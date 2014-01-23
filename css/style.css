@@ -1,0 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+/* line 16, ../scss/style.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #999999;
+  background-color: white;
+}
+
+/* line 27, ../scss/style.scss */
+h1,
+h2,
+h3 {
+  font-family: "Lato", sans-serif;
+  color: #5d5d5d;
+  line-height: 1.1;
+  text-rendering: optimizelegibility;
+}
+
+/* line 34, ../scss/style.scss */
+h1 {
+  font-size: 4em;
+  font-weight: 100;
+}
+
+/* line 39, ../scss/style.scss */
+h2 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+/* line 44, ../scss/style.scss */
+h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+}

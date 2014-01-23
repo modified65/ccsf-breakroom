@@ -3,7 +3,7 @@
     
     <head>
         <meta charset="UTF-8">
-        <title>Style Guide: Project Name</title>
+        <title>Style Guide: Breakroom</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -14,10 +14,16 @@
     <body>
         <header class="sg-header">
             <div class="container">
-                <h1 class="sg-heading">Style Guide: Project Name</h1>
-                <p class="lead">Project description - describe responsive approach and list library/framework dependencies.</p>
-                <p>Maintained by <em>your name</em><br>
-                Last updated: <em>date</em></p>
+                <h1 class="sg-heading">Style Guide: Breakroom</h1>
+                <p class="lead">Project description - Breakroom is a mobile-first, responsive website that uses the following resourses: </p>
+                <ul>
+                	<li><a href="http://www.getbootstrap.com">Bootstrap front-end framework</a></li>
+                	<li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome icon library</a></li>
+                	<li><a href="http://www.google.com/fonts/specimen/Lato">Lato web font</a></li>
+                	<li><a href="http://jquery.com/">jQuery</a></li>
+                </ul>
+                <p>Maintained by <em>Chris Clark</em><br>
+                Last updated: <em>January 22, 2014</em></p>
             </div>
         </header>
         
@@ -35,14 +41,36 @@
                         </div>
                         <p class="sg-p">White: #ffffff</p>
                     </div>
-                    <!--
+					<div class="col-sm-2">
+                        <div class="sg-highlight">
+                            <div class="sg-color" style="background-color:#f5f5f5"></div>
+                        </div>
+                        <p class="sg-p">Light Gray: #f5f5f5</p>
+                    </div>
                     <div class="col-sm-2">
                         <div class="sg-highlight">
-                            <div class="sg-color" style="background-color:"></div>
+                            <div class="sg-color" style="background-color:#999999"></div>
                         </div>
-                        <p class="sg-p">Color: hex value</p>
+                        <p class="sg-p">Gray: #999999</p>
                     </div>
-                    -->
+                    <div class="col-sm-2">
+                        <div class="sg-highlight">
+                            <div class="sg-color" style="background-color:#5d5d5d"></div>
+                        </div>
+                        <p class="sg-p">Dark Gray: #5d5d5d</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="sg-highlight">
+                            <div class="sg-color" style="background-color:#2a2a2a"></div>
+                        </div>
+                        <p class="sg-p">Black: #2a2a2a</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="sg-highlight">
+                            <div class="sg-color" style="background-color:#84ccd3"></div>
+                        </div>
+                        <p class="sg-p">Turquoise: #84ccd3</p>
+                    </div>
                 </div>
             </div>
             <!-- Code snippets -->
@@ -54,7 +82,7 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane pre-scrollable active" id="scss-color">
-                        <!-- SCSS gist goes here -->
+                        <script src="https://gist.github.com/modified65/daccdd0b86f4e2fb6ef1.js"></script>
                     </div>
                 </div>
             </div>
@@ -70,8 +98,8 @@
                 <p class="sg-example">Example</p>
             </div>
             <div class="container">
-                <p class="sg-p">Base font:</p>
-                <p class="sg-p">Web font:</p>
+                <p class="sg-p">Base font: "Helvetica Neue", Helvetica, Arial, sans-serif;</p>
+                <p class="sg-p">Web font: 'Lato', sans-serif;</p>
             </div>
             <!-- Code snippets -->
             <div class="container">
@@ -82,7 +110,7 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane pre-scrollable active" id="scss-font-stack">
-                        <!-- SCSS gist goes here -->
+                        <script src="https://gist.github.com/modified65/fc102f78699c816f364f.js"></script>
                     </div>
                 </div>
             </div>
@@ -91,8 +119,9 @@
                 <h3 class="sg-heading">Body</h3>
                 <p class="sg-example">Example</p>
             </div>
-            <<div class="container">
-                <!-- Sample body text here -->
+            <div class="container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam voluptate dolorum omnis ratione maxime sequi eveniet placeat adipisci accusamus vel natus obcaecati facere! Tempore molestias soluta ab voluptatem quo aperiam?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ad impedit accusamus libero culpa! Autem in aspernatur velit officiis reiciendis vero non laboriosam aut ipsum corrupti odio dignissimos alias voluptas.</p>
             </div>
             <!-- Code snippets -->
             <div class="container">
@@ -103,7 +132,7 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane pre-scrollable active" id="scss-font-body">
-                        <!-- SCSS gist goes here -->
+                        <script src="https://gist.github.com/modified65/04b0f623db1b9a9318bc.js"></script>
                     </div>
                 </div>
             </div>
@@ -112,7 +141,12 @@
                 <p class="sg-example">Example</p>
             </div>
             <div class="container">
-                <!-- Sample headings here -->
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
             </div>
             <!-- Code snippets -->
             <div class="container">
@@ -123,7 +157,7 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane pre-scrollable active" id="scss-font-headings">
-                        <!-- SCSS gist goes here -->
+                        <script src="https://gist.github.com/modified65/f14ec4ffc210c6397981.js"></script>
                     </div>
                 </div>
             </div>

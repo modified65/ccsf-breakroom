@@ -23,7 +23,7 @@
                 	<li><a href="http://jquery.com/">jQuery</a></li>
                 </ul>
                 <p>Maintained by <em>Chris Clark</em><br>
-                Last updated: <em>January 22, 2014</em></p>
+                Last updated: <em>February 7, 2014</em></p>
             </div>
         </header>
         
@@ -238,7 +238,7 @@
                 <p class="sg-example">Example</p>
             </div>
             <div class="container">
-                <!-- Sample table here -->
+                <a href="http://getbootstrap.com/css/#tables">Bootstrap tables documentation</a>
             </div>
         </section>
         
@@ -249,7 +249,29 @@
                 <p class="sg-example">Example</p>
             </div>
             <div class="container">
-                <!-- Sample form here -->
+                <div class="row">
+					<form action="#">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<input type="text" placeholder="Your name" class="form-control" tabindex="1" required>
+							</div>
+							<div class="form-group">
+								<input type="email" placeholder="Your email" class="form-control" tabindex="2" required>
+							</div>
+							<div class="form-group">
+								<input type="text" placeholder="Subject" class="form-control" tabindex="3" required>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<textarea name="" id="" cols="30" rows="10" placeholder="The message you want to send to me" class="form-control" tabindex="5" required></textarea>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-default pull-right" tabindex="6">Submit</button>
+							</div>
+						</div>
+					</form>
+                </div>
             </div>
             <!-- Code snippets -->
             <div class="container">
@@ -266,13 +288,13 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane pre-scrollable active" id="html-forms">
-                        <!-- HTML gist goes here -->
+                        <script src="https://gist.github.com/modified65/efe462dc1f10b657f55a.js"></script>
                     </div>
                     <div class="tab-pane pre-scrollable" id="scss-forms">
-                        <!-- SCSS gist goes here -->
+                        <script src="https://gist.github.com/modified65/e467989c8ee1965f341d.js"></script>
                     </div>
                     <div class="tab-pane pre-scrollable" id="css-forms">
-                        <!-- CSS gist goes here -->
+                        <script src="https://gist.github.com/modified65/1a2dd6f4096f2cacbaea.js"></script>
                     </div>
                 </div>
             </div>
@@ -285,7 +307,7 @@
                 <p class="sg-example">Example</p>
             </div>
             <div class="container">
-                <!-- Sample buttons here -->
+                <button class="btn btn-primary btn-xs">Extra Small</button> <button class="btn btn-primary btn-sm">Small</button> <button class="btn btn-primary">Medium</button> <button class="btn btn-primary btn-lg">Large</button>
             </div>
             <!-- Code snippets -->
             <div class="container">
@@ -302,13 +324,13 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane pre-scrollable active" id="html-buttons">
-                        <!-- HTML gist goes here -->
+                        <script src="https://gist.github.com/modified65/882ca00e6e1720c9bb35.js"></script>
                     </div>
                     <div class="tab-pane pre-scrollable" id="scss-buttons">
-                        <!-- SCSS gist goes here -->
+                        <script src="https://gist.github.com/modified65/f30c66e77d31e27959f3.js"></script>
                     </div>
                     <div class="tab-pane pre-scrollable" id="css-buttons">
-                        <!-- CSS gist goes here -->
+                        <script src="https://gist.github.com/modified65/a89ccef12eec0c9cd6f2.js"></script>
                     </div>
                 </div>
             </div>
@@ -324,7 +346,18 @@
                 <h4 class="sg-example">Example</h4>
             </div>
             <div class="container">
-                <!-- List example goes here -->
+                <ul class="list-unstyled">
+                	<li><a href="#">List item 1</a></li>
+                	<li><a href="#">List item 2</a></li>
+                	<li><a href="#">List item 3</a></li>
+                	<li><a href="#">List item 4</a></li>
+                </ul>
+                <ul class="list-inline">
+                	<li><a href="#">List item 1</a></li>
+                	<li><a href="#">List item 2</a></li>
+                	<li><a href="#">List item 3</a></li>
+                	<li><a href="#">List item 4</a></li>
+                </ul>
             </div>
             <!-- Code snippets -->
             <div class="container">
@@ -341,13 +374,13 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane pre-scrollable active" id="html-list">
-                        <!-- HTML gist goes here -->
+                        <script src="https://gist.github.com/modified65/ffa0d4cc76a4ef5f927a.js"></script>
                     </div>
                     <div class="tab-pane pre-scrollable" id="scss-list">
-                        <!-- SCSS gist goes here -->
+                        <script src="https://gist.github.com/modified65/2f9f916e15739e3e3da0.js"></script>
                     </div>
                     <div class="tab-pane pre-scrollable" id="css-list">
-                        <!-- CSS gist goes here -->
+                        <script src="https://gist.github.com/modified65/b1d7e883104774b01b07.js"></script>
                     </div>
                 </div>
             </div>
@@ -360,7 +393,22 @@
                 <p class="sg-example">Example</p>
             </div>
             <div class="container">
-                <!-- Sample images go here -->
+                <h3 class="sg-heading">Image: Logo</h3>
+                <img src="http://placehold.it/225x61" alt="Placeholder image" class="img-responsive">
+                <h3 class="sg-heading">Image: Client logo</h3>
+                <img src="http://placehold.it/170x100" alt="Placeholder image" class="img-responsive">
+                <h3 class="sg-heading">Image: Carousel</h3>
+                <img src="http://placehold.it/1900x520" alt="Placeholder image" class="img-responsive">
+                <h3 class="sg-heading">Image: Team profile</h3>
+                <img src="http://placehold.it/300x260" alt="Placeholder image" class="img-responsive">
+                <h3 class="sg-heading">Image: Portfolio small</h3>
+                <img src="http://placehold.it/430x280" alt="Placeholder image" class="img-responsive">
+                <h3 class="sg-heading">Image: Portfolio large</h3>
+                <img src="http://placehold.it/870x600" alt="Placeholder image" class="img-responsive">
+                <h3 class="sg-heading">Image: Blog</h3>
+                <img src="http://placehold.it/540x315" alt="Placeholder image" class="img-responsive">
+                <h3 class="sg-heading">Image: Sidebar</h3>
+                <img src="http://placehold.it/80x80" alt="Placeholder image" class="img-responsive">
             </div>
             <!-- Code snippets -->
             <div class="container">
@@ -377,7 +425,7 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane pre-scrollable active" id="html-image1">
-                        <!-- HTML gist goes here -->
+                        <script src="https://gist.github.com/modified65/59864c4dcbff42a8290f.js"></script>
                     </div>
                     <div class="tab-pane pre-scrollable" id="scss-image1">
                         <!-- SCSS gist goes here -->

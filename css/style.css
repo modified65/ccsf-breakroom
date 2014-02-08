@@ -35,3 +35,40 @@ h3 {
   font-size: 1.5em;
   font-weight: normal;
 }
+
+/* line 50, ../scss/style.scss */
+.form-control {
+  background-color: whitesmoke;
+  border: 0px none;
+}
+
+/* line 55, ../scss/style.scss */
+.btn-default {
+  background-color: #2a2a2a;
+  color: white;
+}
+/* line 58, ../scss/style.scss */
+.btn-default:hover, .btn-default:focus {
+  background-color: #999999;
+  color: white;
+}
+
+/* line 65, ../scss/style.scss */
+.btn-primary {
+  background-color: #84ccd3;
+  border: 0px none;
+}
+/* line 68, ../scss/style.scss */
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #5ebcc6;
+}
+
+/* line 74, ../scss/style.scss */
+ul > li > a {
+  color: #84ccd3;
+}
+/* line 76, ../scss/style.scss */
+ul > li > a:hover, ul > li > a:focus {
+  color: #5ebcc6;
+  text-decoration: none;
+}

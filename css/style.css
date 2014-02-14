@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
-/* line 16, ../scss/style.scss */
+/* line 25, ../scss/style.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -8,7 +8,7 @@ body {
   background-color: white;
 }
 
-/* line 27, ../scss/style.scss */
+/* line 36, ../scss/style.scss */
 h1,
 h2,
 h3 {
@@ -18,57 +18,132 @@ h3 {
   text-rendering: optimizelegibility;
 }
 
-/* line 34, ../scss/style.scss */
+/* line 43, ../scss/style.scss */
 h1 {
   font-size: 4em;
   font-weight: 100;
 }
 
-/* line 39, ../scss/style.scss */
+/* line 48, ../scss/style.scss */
 h2 {
   font-size: 2em;
   font-weight: 300;
 }
 
-/* line 44, ../scss/style.scss */
+/* line 53, ../scss/style.scss */
 h3 {
   font-size: 1.5em;
   font-weight: normal;
 }
 
-/* line 50, ../scss/style.scss */
+/* line 59, ../scss/style.scss */
 .form-control {
   background-color: whitesmoke;
   border: 0px none;
 }
 
-/* line 55, ../scss/style.scss */
+/* line 64, ../scss/style.scss */
 .btn-default {
   background-color: #2a2a2a;
   color: white;
 }
-/* line 58, ../scss/style.scss */
+/* line 67, ../scss/style.scss */
 .btn-default:hover, .btn-default:focus {
   background-color: #999999;
   color: white;
 }
 
-/* line 65, ../scss/style.scss */
+/* line 74, ../scss/style.scss */
 .btn-primary {
   background-color: #84ccd3;
   border: 0px none;
 }
-/* line 68, ../scss/style.scss */
+/* line 77, ../scss/style.scss */
 .btn-primary:hover, .btn-primary:focus {
   background-color: #5ebcc6;
+  color: white;
 }
 
-/* line 74, ../scss/style.scss */
+/* line 84, ../scss/style.scss */
 ul > li > a {
   color: #84ccd3;
 }
-/* line 76, ../scss/style.scss */
+/* line 18, ../scss/style.scss */
 ul > li > a:hover, ul > li > a:focus {
   color: #5ebcc6;
   text-decoration: none;
+}
+
+/* line 90, ../scss/style.scss */
+.contentbox, .contentbox-services {
+  position: relative;
+  background: transparent;
+}
+/* line 94, ../scss/style.scss */
+.contentbox h2, .contentbox-services h2 {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+/* line 99, ../scss/style.scss */
+.contentbox .lead, .contentbox-services .lead {
+  color: #84ccd3;
+}
+/* line 103, ../scss/style.scss */
+.contentbox i, .contentbox-services i {
+  color: #84ccd3;
+}
+/* line 107, ../scss/style.scss */
+.contentbox a, .contentbox-services a {
+  color: #84ccd3;
+}
+/* line 18, ../scss/style.scss */
+.contentbox a:hover, .contentbox-services a:hover, .contentbox a:focus, .contentbox-services a:focus {
+  color: #5ebcc6;
+  text-decoration: none;
+}
+/* line 112, ../scss/style.scss */
+.contentbox .more, .contentbox-services .more {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+/* line 119, ../scss/style.scss */
+.contentbox-services {
+  text-align: center;
+  border-bottom: 6px solid #e2f3f5;
+}
+/* line 123, ../scss/style.scss */
+.contentbox-services p {
+  margin-bottom: 35px;
+}
+
+/* line 128, ../scss/style.scss */
+.vertical-middle {
+  position: absolute;
+  left: 50%;
+  top: .5em;
+}
+
+@media (max-width: 768px) {
+  /* line 136, ../scss/style.scss */
+  .vertical-middle {
+    position: static;
+  }
+}
+/* line 143, ../scss/style.scss */
+.message {
+  background-color: #84ccd3;
+  color: white;
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+/* line 149, ../scss/style.scss */
+.message h2 {
+  color: white;
+}
+
+/* line 154, ../scss/style.scss */
+.image-break {
+  background: white url(../images/paper-texture.jpg) repeat-x;
+  height: 45px;
 }

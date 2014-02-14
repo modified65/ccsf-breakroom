@@ -12,6 +12,15 @@ $turquoise: #84ccd3;
 $baseFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $webFontFamily: 'Lato', sans-serif;
 
+// Mixins
+@mixin hover-darken($color, $percentage) {
+	&:hover,
+	&:focus {
+		color: darken($color, $percentage);
+		text-decoration: none;
+	}
+}
+
 // Typography - Body
 body {
 	font-family: $baseFontFamily;
@@ -67,14 +76,82 @@ h3 {
 	border: 0px none;
 	&:hover, &:focus {
 		background-color: darken($turquoise, 10%);
+		color: $white;
 	}
 }
 
 // Lists
 ul>li>a {
 	color: $turquoise;
-	&:hover, &:focus {
-		color: darken($turquoise, 10%);
-		text-decoration: none;
+	@include hover-darken($turquoise, 10%);
+}
+
+// Pattern: Contentbox
+.contentbox {
+    position: relative;
+    background: transparent;
+    
+    h2 {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .lead {
+        color: $turquoise;
+    }
+    
+    i {
+        color: $turquoise;  
+    }
+    
+    a {
+    	color: $turquoise;
+    	@include hover-darken($turquoise, 10%);
 	}
+	
+	.more {
+    	display: inline-block;
+    	margin-top: 25px;
+	}
+}
+
+// Pattern: Contentbox-services
+.contentbox-services {
+	@extend .contentbox;
+	text-align: center;
+	border-bottom:  6px solid lighten($turquoise, 25%);
+	p {
+		margin-bottom:  35px;
+	}
+}
+
+.vertical-middle {
+    position: absolute;
+    left: 50%;
+    top: .5em;
+}
+
+@media (max-width: 768px) {
+
+	.vertical-middle {
+		position: static;
+	}
+
+}
+
+// Pattern: Message
+.message {
+    background-color: $turquoise;
+    color: $white;
+    padding-bottom: 120px;
+    padding-top: 120px;
+    
+    h2 {
+        color: $white;
+    }
+}
+
+.image-break {
+    background: #fff url(../images/paper-texture.jpg) repeat-x;
+    height: 45px;
 }

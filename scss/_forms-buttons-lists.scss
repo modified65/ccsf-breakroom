@@ -1,0 +1,30 @@
+// Forms
+.form-control {
+	background-color: $lightGray;
+	border: 0px none;
+}
+
+.btn-default {
+	background-color: $black;
+	color: $white;
+	&:hover, &:focus {
+		background-color: $gray;
+		color: $white;
+	}
+}
+
+// Buttons
+.btn-primary {
+	background-color: $turquoise;
+	border: 0px none;
+	&:hover, &:focus {
+		background-color: darken($turquoise, 10%);
+		color: $white;
+	}
+}
+
+// Lists
+ul>li>a {
+	color: $turquoise;
+	@include hover-darken($turquoise, 10%);
+}

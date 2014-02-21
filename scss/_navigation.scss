@@ -1,0 +1,82 @@
+.header {
+    background-color: $black;
+    color: $white;
+    text-transform: uppercase;
+    a {
+        color: $white;
+    }
+}
+
+.nav > li > a:hover {
+  color: $turquoise;
+}
+
+.nav > li > a.btn-sm:hover {
+  background-color: $turquoise;
+  color: white;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-nav {
+    padding-top: 40px;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: $turquoise;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  color: $turquoise;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: $turquoise;
+}
+
+.navbar-default .navbar-nav > li > a.btn-sm:hover {
+  color: $white;
+}
+
+.navbar-default .navbar-nav > li > a.login {
+  color: $gray;
+}
+
+.navbar-default .navbar-nav > li > a.login:hover {
+  color: $turquoise;
+}
+
+.navbar-default .navbar-toggle {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: $darkGray;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: transparent;
+}
+
+.navbar .btn-primary {
+    background-color: $turquoise;
+    margin-top: -5px;
+    &:hover, &:focus {
+		background-color: darken($turquoise, 10%);
+		color: $white;
+	}
+}

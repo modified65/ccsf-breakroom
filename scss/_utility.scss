@@ -1,0 +1,13 @@
+.vertical-middle {
+    position: absolute;
+    left: 50%;
+    top: .5em;
+}
+
+@media (max-width: 768px) {
+
+	.vertical-middle {
+		position: static;
+	}
+
+}

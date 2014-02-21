@@ -23,7 +23,7 @@
                 	<li><a href="http://jquery.com/">jQuery</a></li>
                 </ul>
                 <p>Maintained by <em>Chris Clark</em><br>
-                Last updated: <em>February 7, 2014</em></p>
+                Last updated: <em>February 20, 2014</em></p>
             </div>
         </header>
         
@@ -671,15 +671,209 @@
             </div>
 
             <div class="container">
-                <h3 class="sg-heading">Widget: Name</h3>
+                <h3 class="sg-heading">Widget: CSS progress bar</h3>
                 <p class="sg-example">Example</p>
             </div>
             <section>
                 <div class="container">
                     <div class="row">
-                        <!-- Sample widget here -->
+						<div class="col-lg-6">
+						  <h2>Heading 2</h2>
+						  <div class="progress-bar bar-one">
+							<div class="progress">
+							  <span class="field">Concepts</span>
+							  <span class="field-value fade-in">60%</span>
+							  <div style="width: 60%;" class="bar"></div>
+							</div>
+						  </div>
+						  <div class="progress-bar bar-two">
+							<div class="progress">
+							  <span class="field">Design</span>
+							  <span class="field-value fade-in">75%</span>
+							  <div style="width: 75%;" class="bar"></div>
+							</div>
+						  </div>
+						  <div class="progress-bar bar-three">
+							<div class="progress">
+							  <span class="field">Awesome!</span>
+							  <span class="field-value fade-in">100%</span>
+							  <div style="width: 100%;" class="bar"></div>
+							</div>
+						  </div>
+						</div>
                     </div>
                 </div>
+            </section>
+            <!-- Code snippets -->
+            <div class="container">
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a href="#html-progress-bar" data-toggle="tab">HTML</a>
+                    </li>
+                    <li>
+                        <a href="#scss-progress-bar" data-toggle="tab">SCSS</a>
+                    </li>
+                    <li>
+                        <a href="#css-progress-bar" data-toggle="tab">CSS</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane pre-scrollable active" id="html-progress-bar">
+                        <script src="https://gist.github.com/modified65/aa6d007d06ef09b7894e.js"></script>
+                    </div>
+                    <div class="tab-pane pre-scrollable" id="scss-progress-bar">
+                        <script src="https://gist.github.com/modified65/a591aa4b36ddf3990b49.js"></script>
+                    </div>
+                    <div class="tab-pane pre-scrollable" id="css-progress-bar">
+                        <script src="https://gist.github.com/modified65/fbfc9db202acab99f066.js"></script>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <h3 class="sg-heading">Widget: Portfolio hide/reveal</h3>
+                <p class="sg-example">Example</p>
+            </div>
+            <section>
+                <div class="container">
+                    <div class="row">
+						<div class="col-lg-4">
+							<div class="thumbs">
+							<img src="http://placehold.it/430x280" alt="Portfolio example" class="img-responsive">
+							   <a href="#">
+								 <span class="title">
+								   <span>Project Title</span>
+								 </span>
+							   </a>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </section>
+            <!-- Code snippets -->
+            <div class="container">
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a href="#html-portfolio" data-toggle="tab">HTML</a>
+                    </li>
+                    <li>
+                        <a href="#scss-portfolio" data-toggle="tab">SCSS</a>
+                    </li>
+                    <li>
+                        <a href="#css-portfolio" data-toggle="tab">CSS</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane pre-scrollable active" id="html-portfolio">
+                        <script src="https://gist.github.com/modified65/4d91fbf7e4b89f43bdcd.js"></script>
+                    </div>
+                    <div class="tab-pane pre-scrollable" id="scss-portfolio">
+                        <script src="https://gist.github.com/modified65/8850a40e875f2fd435ed.js"></script>
+                    </div>
+                    <div class="tab-pane pre-scrollable" id="css-portfolio">
+                        <script src="https://gist.github.com/modified65/14fd998ebd7b134cf2e2.js"></script>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <h3 class="sg-heading">Widget: Mobile navigation</h3>
+                <p class="sg-example">Example</p>
+            </div>
+            <header class="header">
+			  <div class="container">
+				<div class="navbar navbar-default">
+				  <div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					  <span class="icon-bar"></span>
+						 <span class="icon-bar"></span>
+						 <span class="icon-bar"></span>
+					   </button>
+					   <a class="navbar-brand" href="index.html">
+						<img src="http://placehold.it/170x100" alt="Breakroom logo">
+					   </a>
+					 </div>
+					 <div class="navbar-collapse collapse">
+					   <ul class="nav navbar-nav navbar-right">
+						 <li><a href="#">Home</a></li>
+						 <li><a href="#">About</a></li>
+						 <li><a href="#">Services</a></li>
+						 <li><a href="#">Portfolio</a></li>
+						 <li><a href="#">Blog</a></li>
+						 <li><a href="#">Contact</a></li>
+						 <li><a class="login"><i class="fa fa-user"></i>Login</a></li>
+						 <li><a href="#"><span class="btn btn-primary btn-sm">Sign Up</span></a></li>
+					   </ul>
+					 </div>
+				   </div>
+				 </div>
+			   </header>
+            <!-- Code snippets -->
+            <div class="container">
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a href="#html-navigation" data-toggle="tab">HTML</a>
+                    </li>
+                    <li>
+                        <a href="#scss-navigation" data-toggle="tab">SCSS</a>
+                    </li>
+                    <li>
+                        <a href="#css-navigation" data-toggle="tab">CSS</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane pre-scrollable active" id="html-navigation">
+                        <script src="https://gist.github.com/modified65/adcbd605929b613987ef.js"></script>
+                    </div>
+                    <div class="tab-pane pre-scrollable" id="scss-navigation">
+                        <script src="https://gist.github.com/modified65/c32b2120e1e44c06203c.js"></script>
+                    </div>
+                    <div class="tab-pane pre-scrollable" id="css-navigation">
+                        <script src="https://gist.github.com/modified65/105a7330796a04ec6387.js"></script>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <h3 class="sg-heading">Widget: Image carousel</h3>
+                <p class="sg-example">Example</p>
+            </div>
+            <section>
+                <div id="carousel-example-generic" class="carousel slide bs-docs-carousel-example">
+				  <ol class="carousel-indicators">
+					<li data-target="#carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel" data-slide-to="1"></li>
+					   <li data-target="#carousel" data-slide-to="2"></li>
+					  </ol>
+					  <div class="carousel-inner">
+						<div class="item active">
+						  <img src="http://placehold.it/1900x520" alt="First slide">
+						  <div class="carousel-caption hidden-xs">
+							<h1>Slide One</h1>
+							<h2><i>Heading 2</i></h2>
+							<a class="btn-main" href="#"><i class="fa fa-chevron-right"></i> See More</a>
+						  </div>
+						</div>
+						<div class="item">
+						  <img src="http://placehold.it/1900x520" alt="Second slide">
+						  <div class="carousel-caption hidden-xs">
+							<h1>Slide Two</h1>
+							<h2><i>Heading 2</i></h2>
+							<a class="btn-main" href="#"><i class="fa fa-chevron-right"></i> See More</a>
+						  </div>
+						</div>
+						<div class="item">
+						  <img src="http://placehold.it/1900x520" alt="Third slide">
+						  <div class="carousel-caption hidden-xs">
+							<h1>Slide Three</h1>
+							<h2><i>Heading 2</i></h2>
+							<a class="btn-main" href="#"><i class="fa fa-chevron-right"></i> See More</a>
+						  </div>
+						</div>
+					  </div>
+					  <a class="left carousel-control hidden-xs" href="#carousel-example-generic" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+					  <a class="right carousel-control hidden-xs" href="#carousel-example-generic" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+					</div>
             </section>
             <!-- Code snippets -->
             <div class="container">
@@ -696,13 +890,13 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane pre-scrollable active" id="html-carousel">
-                        <!-- HTML gist goes here -->
+                        <script src="https://gist.github.com/modified65/6efe82295d5ca90801a0.js"></script>
                     </div>
                     <div class="tab-pane pre-scrollable" id="scss-carousel">
-                        <!-- SCSS gist goes here -->
+                        <script src="https://gist.github.com/modified65/a0461b2b050562361310.js"></script>
                     </div>
                     <div class="tab-pane pre-scrollable" id="css-carousel">
-                        <!-- CSS gist goes here -->
+                        <script src="https://gist.github.com/modified65/ebdb3f1f22d1f96bbbe6.js"></script>
                     </div>
                 </div>
             </div>
@@ -727,7 +921,9 @@
             $('a[href="#html-contentbox-services2"]').tab('show');
             $('a[href="#html-well"]').tab('show');
             $('a[href="#html-message"]').tab('show');
-            $('a[href="#html-nav"]').tab('show');
+            $('a[href="#html-progress-bar"]').tab('show');
+            $('a[href="#html-portfolio"]').tab('show');
+            $('a[href="#html-navigation"]').tab('show');
             $('a[href="#html-carousel"]').tab('show');
         </script>
     </body>

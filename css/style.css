@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
-/* line 25, ../scss/style.scss */
+/* line 2, ../scss/_typography.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -8,7 +8,7 @@ body {
   background-color: white;
 }
 
-/* line 36, ../scss/style.scss */
+/* line 13, ../scss/_typography.scss */
 h1,
 h2,
 h3 {
@@ -18,106 +18,124 @@ h3 {
   text-rendering: optimizelegibility;
 }
 
-/* line 43, ../scss/style.scss */
+/* line 20, ../scss/_typography.scss */
 h1 {
   font-size: 4em;
   font-weight: 100;
 }
 
-/* line 48, ../scss/style.scss */
+/* line 25, ../scss/_typography.scss */
 h2 {
   font-size: 2em;
   font-weight: 300;
 }
 
-/* line 53, ../scss/style.scss */
+/* line 30, ../scss/_typography.scss */
 h3 {
   font-size: 1.5em;
   font-weight: normal;
 }
 
-/* line 59, ../scss/style.scss */
+/* line 2, ../scss/_forms-buttons-lists.scss */
 .form-control {
   background-color: whitesmoke;
   border: 0px none;
 }
 
-/* line 64, ../scss/style.scss */
+/* line 7, ../scss/_forms-buttons-lists.scss */
 .btn-default {
   background-color: #2a2a2a;
   color: white;
 }
-/* line 67, ../scss/style.scss */
+/* line 10, ../scss/_forms-buttons-lists.scss */
 .btn-default:hover, .btn-default:focus {
   background-color: #999999;
   color: white;
 }
 
-/* line 74, ../scss/style.scss */
-.btn-primary {
+/* line 17, ../scss/_forms-buttons-lists.scss */
+.btn-primary, .btn-main {
   background-color: #84ccd3;
   border: 0px none;
 }
-/* line 77, ../scss/style.scss */
-.btn-primary:hover, .btn-primary:focus {
+/* line 20, ../scss/_forms-buttons-lists.scss */
+.btn-primary:hover, .btn-main:hover, .btn-primary:focus, .btn-main:focus {
   background-color: #5ebcc6;
   color: white;
 }
 
-/* line 84, ../scss/style.scss */
+/* line 27, ../scss/_forms-buttons-lists.scss */
 ul > li > a {
   color: #84ccd3;
 }
-/* line 18, ../scss/style.scss */
+/* line 4, ../scss/_mixins.scss */
 ul > li > a:hover, ul > li > a:focus {
   color: #5ebcc6;
   text-decoration: none;
 }
 
-/* line 90, ../scss/style.scss */
+/* line 2, ../scss/_patterns.scss */
 .contentbox, .contentbox-services {
   position: relative;
   background: transparent;
 }
-/* line 94, ../scss/style.scss */
+/* line 6, ../scss/_patterns.scss */
 .contentbox h2, .contentbox-services h2 {
   margin-top: 15px;
   margin-bottom: 30px;
 }
-/* line 99, ../scss/style.scss */
+/* line 11, ../scss/_patterns.scss */
 .contentbox .lead, .contentbox-services .lead {
   color: #84ccd3;
 }
-/* line 103, ../scss/style.scss */
+/* line 15, ../scss/_patterns.scss */
 .contentbox i, .contentbox-services i {
   color: #84ccd3;
 }
-/* line 107, ../scss/style.scss */
+/* line 19, ../scss/_patterns.scss */
 .contentbox a, .contentbox-services a {
   color: #84ccd3;
 }
-/* line 18, ../scss/style.scss */
+/* line 4, ../scss/_mixins.scss */
 .contentbox a:hover, .contentbox-services a:hover, .contentbox a:focus, .contentbox-services a:focus {
   color: #5ebcc6;
   text-decoration: none;
 }
-/* line 112, ../scss/style.scss */
+/* line 24, ../scss/_patterns.scss */
 .contentbox .more, .contentbox-services .more {
   display: inline-block;
   margin-top: 25px;
 }
 
-/* line 119, ../scss/style.scss */
+/* line 31, ../scss/_patterns.scss */
 .contentbox-services {
   text-align: center;
   border-bottom: 6px solid #e2f3f5;
 }
-/* line 123, ../scss/style.scss */
+/* line 35, ../scss/_patterns.scss */
 .contentbox-services p {
   margin-bottom: 35px;
 }
 
-/* line 128, ../scss/style.scss */
+/* line 42, ../scss/_patterns.scss */
+.message {
+  background-color: #84ccd3;
+  color: white;
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+/* line 48, ../scss/_patterns.scss */
+.message h2 {
+  color: white;
+}
+
+/* line 53, ../scss/_patterns.scss */
+.image-break {
+  background: white url(../images/paper-texture.jpg) repeat-x;
+  height: 45px;
+}
+
+/* line 1, ../scss/_utility.scss */
 .vertical-middle {
   position: absolute;
   left: 50%;
@@ -125,25 +143,446 @@ ul > li > a:hover, ul > li > a:focus {
 }
 
 @media (max-width: 768px) {
-  /* line 136, ../scss/style.scss */
+  /* line 9, ../scss/_utility.scss */
   .vertical-middle {
     position: static;
   }
 }
-/* line 143, ../scss/style.scss */
-.message {
+/* -- CSS animated progress bars -- */
+/* line 2, ../scss/_progress-bar.scss */
+.progress-bar {
+  background-color: white;
+  float: none;
+}
+
+/* line 7, ../scss/_progress-bar.scss */
+.progress {
+  background-color: whitesmoke;
+  border-radius: 0 0 0 0;
+  box-shadow: 0 1px 2px transparent inset;
+  height: 50px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  margin-top: 12px;
+}
+
+/* line 19, ../scss/_progress-bar.scss */
+.progress .bar {
   background-color: #84ccd3;
   color: white;
-  padding-bottom: 120px;
-  padding-top: 120px;
+  float: left;
+  font-size: 12px;
+  height: 100%;
+  text-align: center;
+  transition: width 0.6s ease 0s;
+  width: 0;
+  position: relative;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
 }
-/* line 149, ../scss/style.scss */
-.message h2 {
+
+/* line 34, ../scss/_progress-bar.scss */
+.progress .bar:after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: -8px;
+  border-style: solid;
+  border-width: 8px 0 8px 8px;
+  border-color: transparent #84ccd3;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+
+/* line 47, ../scss/_progress-bar.scss */
+.progress .field {
+  color: white;
+  left: 20px;
+  line-height: 44px;
+  position: absolute;
+  z-index: 100;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* line 58, ../scss/_progress-bar.scss */
+.progress .field-value {
+  color: #2a2a2a;
+  right: 20px;
+  line-height: 44px;
+  position: absolute;
+  z-index: 100;
+  text-align: right;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  -webkit-animation-delay: 1.3s;
+  -moz-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+
+/* Animated Progress Bar onload */
+/* line 74, ../scss/_progress-bar.scss */
+.bar-one {
+  width: 100%;
+  -moz-animation: bar-one 1.0s ease-out;
+  -webkit-animation: bar-one 1.0s ease-out;
+}
+
+/* line 80, ../scss/_progress-bar.scss */
+.bar-two {
+  width: 100%;
+  -moz-animation: bar-two 1.7s ease-out;
+  -webkit-animation: bar-two 1.7s ease-out;
+}
+
+/* line 86, ../scss/_progress-bar.scss */
+.bar-three {
+  width: 100%;
+  -moz-animation: bar-three 2.3s ease-out;
+  -webkit-animation: bar-three 2.3s ease-out;
+}
+
+@-moz-keyframes bar-one {
+  /* line 93, ../scss/_progress-bar.scss */
+  0% {
+    width: 0px;
+  }
+
+  /* line 97, ../scss/_progress-bar.scss */
+  100% {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes bar-two {
+  /* line 103, ../scss/_progress-bar.scss */
+  0% {
+    width: 0px;
+  }
+
+  /* line 107, ../scss/_progress-bar.scss */
+  100% {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes bar-three {
+  /* line 113, ../scss/_progress-bar.scss */
+  0% {
+    width: 0px;
+  }
+
+  /* line 117, ../scss/_progress-bar.scss */
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes bar-one {
+  /* line 123, ../scss/_progress-bar.scss */
+  0% {
+    width: 0px;
+  }
+
+  /* line 127, ../scss/_progress-bar.scss */
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes bar-two {
+  /* line 133, ../scss/_progress-bar.scss */
+  0% {
+    width: 0px;
+  }
+
+  /* line 137, ../scss/_progress-bar.scss */
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes bar-three {
+  /* line 143, ../scss/_progress-bar.scss */
+  0% {
+    width: 0px;
+  }
+
+  /* line 147, ../scss/_progress-bar.scss */
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  /* line 153, ../scss/_progress-bar.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 157, ../scss/_progress-bar.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  /* line 163, ../scss/_progress-bar.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 167, ../scss/_progress-bar.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 173, ../scss/_progress-bar.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 177, ../scss/_progress-bar.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 182, ../scss/_progress-bar.scss */
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+/* line 1, ../scss/_portfolio.scss */
+.thumbs {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+/* line 7, ../scss/_portfolio.scss */
+.thumbs a {
+  background-color: #84ccd3;
+  bottom: -200px;
+  color: white;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  z-index: 100;
+}
+/* line 20, ../scss/_portfolio.scss */
+.thumbs a span.title {
+  display: table;
+  width: 100%;
+  height: 90%;
+}
+/* line 25, ../scss/_portfolio.scss */
+.thumbs a span.title span {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: white;
+  vertical-align: middle;
+  display: table-cell;
+}
+/* line 34, ../scss/_portfolio.scss */
+.thumbs a:hover {
+  bottom: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out 0s, bottom 0.4s cubic-bezier(0.25, 0.5, 0, 1) 0s;
+}
+
+/* line 1, ../scss/_navigation.scss */
+.header {
+  background-color: #2a2a2a;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 5, ../scss/_navigation.scss */
+.header a {
   color: white;
 }
 
-/* line 154, ../scss/style.scss */
-.image-break {
-  background: white url(../images/paper-texture.jpg) repeat-x;
-  height: 45px;
+/* line 10, ../scss/_navigation.scss */
+.nav > li > a:hover {
+  color: #84ccd3;
+}
+
+/* line 14, ../scss/_navigation.scss */
+.nav > li > a.btn-sm:hover {
+  background-color: #84ccd3;
+  color: white;
+}
+
+/* line 19, ../scss/_navigation.scss */
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* line 24, ../scss/_navigation.scss */
+.navbar-nav {
+  padding-top: 40px;
+}
+
+/* line 28, ../scss/_navigation.scss */
+.navbar {
+  margin-bottom: 0;
+}
+
+/* line 32, ../scss/_navigation.scss */
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+/* line 36, ../scss/_navigation.scss */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #84ccd3;
+}
+
+/* line 40, ../scss/_navigation.scss */
+.navbar-default .navbar-nav > .active > a {
+  color: #84ccd3;
+  background-color: transparent;
+}
+
+/* line 45, ../scss/_navigation.scss */
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: #84ccd3;
+}
+
+/* line 50, ../scss/_navigation.scss */
+.navbar-default .navbar-nav > li > a.btn-sm:hover {
+  color: white;
+}
+
+/* line 54, ../scss/_navigation.scss */
+.navbar-default .navbar-nav > li > a.login {
+  color: #999999;
+}
+
+/* line 58, ../scss/_navigation.scss */
+.navbar-default .navbar-nav > li > a.login:hover {
+  color: #84ccd3;
+}
+
+/* line 62, ../scss/_navigation.scss */
+.navbar-default .navbar-toggle {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+/* line 67, ../scss/_navigation.scss */
+.navbar-default .navbar-toggle:hover {
+  background-color: #5d5d5d;
+}
+
+/* line 71, ../scss/_navigation.scss */
+.navbar-default .navbar-collapse {
+  border-color: transparent;
+}
+
+/* line 75, ../scss/_navigation.scss */
+.navbar .btn-primary, .navbar .btn-main {
+  background-color: #84ccd3;
+  margin-top: -5px;
+}
+/* line 78, ../scss/_navigation.scss */
+.navbar .btn-primary:hover, .navbar .btn-main:hover, .navbar .btn-primary:focus, .navbar .btn-main:focus {
+  background-color: #5ebcc6;
+  color: white;
+}
+
+/* line 1, ../scss/_carousel.scss */
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  height: 40px;
+  width: 40px;
+  border: 3px solid white;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background: none repeat scroll 0 0 rgba(15, 15, 15, 0.16);
+  z-index: 10;
+}
+
+/* line 17, ../scss/_carousel.scss */
+.carousel-control {
+  padding-top: 2px;
+  text-shadow: none;
+}
+
+/* line 22, ../scss/_carousel.scss */
+.carousel-control.left {
+  background-image: none;
+}
+
+/* line 26, ../scss/_carousel.scss */
+.carousel-control.right {
+  right: 10px;
+  background-image: none;
+}
+
+/* line 31, ../scss/_carousel.scss */
+.carousel-caption {
+  text-align: left;
+  text-shadow: none;
+}
+
+/* line 36, ../scss/_carousel.scss */
+.carousel-caption h1 {
+  background-color: #2a2a2a;
+  color: white;
+  padding-left: 10px;
+}
+
+/* line 42, ../scss/_carousel.scss */
+.carousel-caption h2 {
+  margin-top: 0;
+}
+
+/* line 46, ../scss/_carousel.scss */
+.carousel-caption h2 i {
+  color: #999999;
+  font-weight: normal;
+  font-style: italic;
+  padding: 7px 15px;
+  background-color: white;
+  font-size: 27px;
+  line-height: 65px;
+}
+
+/* line 57, ../scss/_carousel.scss */
+.btn-main {
+  color: white;
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 11px;
+  text-decoration: none;
+  border-bottom: 4px solid #3fa7b2;
 }

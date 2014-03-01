@@ -75,34 +75,34 @@ ul > li > a:hover, ul > li > a:focus {
 }
 
 /* line 2, ../scss/_patterns.scss */
-.contentbox, .contentbox-services {
+.contentbox, .contentbox-services, .contentbox-footer {
   position: relative;
   background: transparent;
 }
 /* line 6, ../scss/_patterns.scss */
-.contentbox h2, .contentbox-services h2 {
+.contentbox h2, .contentbox-services h2, .contentbox-footer h2 {
   margin-top: 15px;
   margin-bottom: 30px;
 }
 /* line 11, ../scss/_patterns.scss */
-.contentbox .lead, .contentbox-services .lead {
+.contentbox .lead, .contentbox-services .lead, .contentbox-footer .lead {
   color: #84ccd3;
 }
 /* line 15, ../scss/_patterns.scss */
-.contentbox i, .contentbox-services i {
+.contentbox i, .contentbox-services i, .contentbox-footer i {
   color: #84ccd3;
 }
 /* line 19, ../scss/_patterns.scss */
-.contentbox a, .contentbox-services a {
+.contentbox a, .contentbox-services a, .contentbox-footer a {
   color: #84ccd3;
 }
 /* line 4, ../scss/_mixins.scss */
-.contentbox a:hover, .contentbox-services a:hover, .contentbox a:focus, .contentbox-services a:focus {
+.contentbox a:hover, .contentbox-services a:hover, .contentbox-footer a:hover, .contentbox a:focus, .contentbox-services a:focus, .contentbox-footer a:focus {
   color: #5ebcc6;
   text-decoration: none;
 }
 /* line 24, ../scss/_patterns.scss */
-.contentbox .more, .contentbox-services .more {
+.contentbox .more, .contentbox-services .more, .contentbox-footer .more {
   display: inline-block;
   margin-top: 25px;
 }
@@ -117,22 +117,58 @@ ul > li > a:hover, ul > li > a:focus {
   margin-bottom: 35px;
 }
 
-/* line 42, ../scss/_patterns.scss */
+/* line 41, ../scss/_patterns.scss */
 .message {
   background-color: #84ccd3;
   color: white;
   padding-bottom: 120px;
   padding-top: 120px;
 }
-/* line 48, ../scss/_patterns.scss */
+/* line 47, ../scss/_patterns.scss */
 .message h2 {
   color: white;
 }
 
-/* line 53, ../scss/_patterns.scss */
+/* line 52, ../scss/_patterns.scss */
 .image-break {
   background: white url(../images/paper-texture.jpg) repeat-x;
   height: 45px;
+}
+
+/* line 57, ../scss/_patterns.scss */
+.footer-top {
+  background-color: #5d5d5d;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* line 63, ../scss/_patterns.scss */
+.footer-bottom {
+  background-color: #2a2a2a;
+  color: #999999;
+  padding-top: 25px;
+  padding-bottom: 90px;
+}
+/* line 68, ../scss/_patterns.scss */
+.footer-bottom a {
+  color: white;
+}
+
+/* line 73, ../scss/_patterns.scss */
+.contentbox-footer {
+  color: white;
+}
+/* line 76, ../scss/_patterns.scss */
+.contentbox-footer h2 {
+  color: #84ccd3;
+}
+/* line 79, ../scss/_patterns.scss */
+.contentbox-footer i {
+  color: white;
+}
+/* line 82, ../scss/_patterns.scss */
+.contentbox-footer a {
+  color: #84ccd3;
 }
 
 /* line 1, ../scss/_utility.scss */
@@ -466,49 +502,50 @@ ul > li > a:hover, ul > li > a:focus {
   background-color: transparent;
 }
 
-/* line 45, ../scss/_navigation.scss */
-.navbar-default .navbar-nav > .active > a:hover {
+/* line 46, ../scss/_navigation.scss */
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent;
   color: #84ccd3;
 }
 
-/* line 50, ../scss/_navigation.scss */
+/* line 51, ../scss/_navigation.scss */
 .navbar-default .navbar-nav > li > a.btn-sm:hover {
   color: white;
 }
 
-/* line 54, ../scss/_navigation.scss */
+/* line 55, ../scss/_navigation.scss */
 .navbar-default .navbar-nav > li > a.login {
   color: #999999;
 }
 
-/* line 58, ../scss/_navigation.scss */
+/* line 59, ../scss/_navigation.scss */
 .navbar-default .navbar-nav > li > a.login:hover {
   color: #84ccd3;
 }
 
-/* line 62, ../scss/_navigation.scss */
+/* line 63, ../scss/_navigation.scss */
 .navbar-default .navbar-toggle {
   margin-top: 30px;
   margin-right: 30px;
 }
 
-/* line 67, ../scss/_navigation.scss */
+/* line 68, ../scss/_navigation.scss */
 .navbar-default .navbar-toggle:hover {
   background-color: #5d5d5d;
 }
 
-/* line 71, ../scss/_navigation.scss */
+/* line 72, ../scss/_navigation.scss */
 .navbar-default .navbar-collapse {
   border-color: transparent;
 }
 
-/* line 75, ../scss/_navigation.scss */
+/* line 76, ../scss/_navigation.scss */
 .navbar .btn-primary, .navbar .btn-main {
   background-color: #84ccd3;
   margin-top: -5px;
 }
-/* line 78, ../scss/_navigation.scss */
+/* line 79, ../scss/_navigation.scss */
 .navbar .btn-primary:hover, .navbar .btn-main:hover, .navbar .btn-primary:focus, .navbar .btn-main:focus {
   background-color: #5ebcc6;
   color: white;

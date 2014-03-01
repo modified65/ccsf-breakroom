@@ -37,7 +37,6 @@
 	}
 }
 
-
 // Pattern: Message
 .message {
     background-color: $turquoise;
@@ -53,4 +52,34 @@
 .image-break {
     background: #fff url(../images/paper-texture.jpg) repeat-x;
     height: 45px;
+}
+
+.footer-top {
+	background-color: $darkGray;
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.footer-bottom {
+	background-color: $black;
+	color: $gray;
+	padding-top: 25px;
+	padding-bottom: 90px;
+	a {
+		color: $white;
+	}
+}
+
+.contentbox-footer {
+	@extend .contentbox;
+	color: $white;
+	h2 {
+		color: $turquoise;
+	}
+	i {
+		color: $white;
+	}
+	a {
+		color: $turquoise;
+	}
 }

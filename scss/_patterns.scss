@@ -1,65 +1,54 @@
 // Pattern: Contentbox
 .contentbox {
-    position: relative;
-    background: transparent;
-    
-    h2 {
-        margin-top: 15px;
-        margin-bottom: 30px;
-    }
-    
-    .lead {
-        color: $turquoise;
-    }
-    
-    i {
-        color: $turquoise;  
-    }
-    
-    a {
-    	color: $turquoise;
-    	@include hover-darken($turquoise, 10%);
+	position: relative;
+	background: transparent;
+	h2 {
+		margin-top: 15px;
+		margin-bottom: 30px;
 	}
-	
+	.lead {
+		color: $turquoise;
+	}
+	i {
+		color: $turquoise;
+	}
+	a {
+		color: $turquoise;
+		@include hover-darken($turquoise, 10%);
+	}
 	.more {
-    	display: inline-block;
-    	margin-top: 25px;
+		display: inline-block;
+		margin-top: 25px;
 	}
 }
-
 // Pattern: Contentbox-services
 .contentbox-services {
 	@extend .contentbox;
 	text-align: center;
-	border-bottom:  6px solid lighten($turquoise, 25%);
+	border-bottom: 6px solid lighten($turquoise, 25%);
 	p {
-		margin-bottom:  35px;
+		margin-bottom: 35px;
 	}
 }
-
 // Pattern: Message
 .message {
-    background-color: $turquoise;
-    color: $white;
-    padding-bottom: 120px;
-    padding-top: 120px;
-    
-    h2 {
-        color: $white;
-    }
+	background-color: $turquoise;
+	color: $white;
+	padding-bottom: 120px;
+	padding-top: 120px;
+	h2 {
+		color: $white;
+	}
 }
-
 .image-break {
-    background: #fff url(../images/paper-texture.jpg) repeat-x;
-    height: 45px;
+	background: #fff url(../images/paper-texture.jpg) repeat-x;
+	height: 45px;
 }
-
 .footer-top {
 	background-color: $darkGray;
 	padding-top: 120px;
 	padding-bottom: 120px;
 }
-
 .footer-bottom {
 	background-color: $black;
 	color: $gray;
@@ -69,7 +58,6 @@
 		color: $white;
 	}
 }
-
 .contentbox-footer {
 	@extend .contentbox;
 	color: $white;
@@ -81,5 +69,151 @@
 	}
 	a {
 		color: $turquoise;
+	}
+}
+.breadcrumb {
+	margin-top: 25px;
+	a {
+		color: $darkGray;
+	}
+}
+.title-box {
+	background: $turquoise;
+	color: $white;
+	text-align: center;
+	padding: 10px;
+	position: relative;
+	margin-bottom: 0;
+}
+.title-box em {
+	color: $black;
+}
+.title-box:after {
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	left: 44%;
+	border-style: solid;
+	border-width: 15px 15px 0;
+	border-color: $turquoise transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+}
+
+.title-box + .list-inline {
+	margin-top: 20px;
+}
+
+.services {
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+.clients,
+.team,
+{
+	margin-top: 70px;
+	margin-bottom: 120px;
+}
+.skills {
+	margin-top: 50px;
+	margin-bottom: 120px;
+}
+.plans {
+	margin-top: 70px;
+	margin-bottom: 40px;
+}
+.pricing-table {
+	background: $white;
+	border: 1px solid $lightGray;
+	border-bottom: 7px solid $lightGray;
+	margin-bottom: 40px;
+	li {
+		color: $black;
+		padding: 20px;
+		border-bottom: 1px dotted $lightGray;
+		font-weight: bold;
+	}
+	.price {
+		font-size: 26px;
+		border-bottom: 1px dotted $lightGray;
+		margin-top: 0;
+	}
+	span {
+		font-weight: normal;
+		color: $gray;
+	}
+	.info {
+		font-weight: normal;
+		font-size: 13px;
+		color: $gray;
+	}
+}
+.plans .title-box.active {
+	background-color: $black;
+	-moz-box-shadow: 0 0 20px $gray;
+	-webkit-box-shadow: 0 0 20px $gray;
+	box-shadow: 0 0 20px $gray;
+}
+.plans .title-box.active:after {
+	border-color: $black transparent;
+}
+.plans .title-box.active:after {
+	border-color: $black transparent;
+}
+.plans .title-box.active + .pricing-table {
+	-moz-box-shadow: 0 0 20px $gray;
+	-webkit-box-shadow: 0 0 20px $gray;
+	box-shadow: 0 0 20px $gray;
+}
+.portfolio,
+.form {
+	margin-bottom: 120px;
+}
+.map {
+	height: 265px;
+	iframe {
+		background-color: transparent;
+		border: medium none;
+		height: inherit;
+		overflow: hidden;
+		width: 100%;
+	}
+}
+.blog-article .contentbox {
+	padding-bottom: 20px;
+	border-bottom: 1px solid $lightGray;
+	margin-bottom: 100px;
+}
+.blog-article-date {
+	background-color: $black;
+	padding: 10px;
+	margin-bottom: 30px;
+	margin-left: -15px;
+	border-bottom: 5px solid $darkGray;
+	text-align: center;
+	h2 {
+		color: $turquoise;
+		font-size: 40px;
+		font-weight: 300;
+		letter-spacing: -3px;
+		line-height: 20px;
+		padding-bottom: 0;
+	}
+	h3 {
+		color: $white;
+		font-size: 20px;
+		font-weight: 800;
+		line-height: 20px;
+		padding-bottom: 0;
+	}
+}
+.boxed {
+	padding: 35px;
+	background: $lightGray;
+	border-radius: 2px;
+	border: 1px solid $gray;
+	h2 {
+		margin-top: 0;
 	}
 }

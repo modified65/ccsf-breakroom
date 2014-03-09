@@ -20,7 +20,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="index.html">
-						<img src="http://placehold.it/170x100" alt="Breakroom logo">
+						<img src="images/logo.png" alt="Breakroom logo">
 					</a>
 				</div>
 				<div class="navbar-collapse collapse" ng-controller="navController">
@@ -57,7 +57,7 @@
 			</div>
 		</div>
 	</header>
-	<main ng-view>
+	<main class="view" ng-view>
 		<!-- AngularJS partials will get loaded here -->
 	</main>
 	<footer>
@@ -75,11 +75,11 @@
 						<div class="contentbox-footer">
 							<h2>Latest Tweets</h2>
 							<!-- tweet content to be added later -->
-							<ul class="list-unstyled">
-								<li ng-repeat="entry in entries">
-									<i class="fa fa-twitter fa-lg"></i>
-								</li>
-							</ul>
+<!--
+							 <ul ng-controller="deliciousCtrl" class="list-unstyled">
+                              <li ng-repeat="entry in entries"><i class="fa fa-twitter fa-2x"></i> <a href="{{entry.u}}">{{entry.d}}</a></li>
+                            </ul>
+-->
 						</div>
 					</div>
 					<div class="col-sm-4">
@@ -149,7 +149,8 @@
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+	<script src="http://code.angularjs.org/1.2.2/angular-animate.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>	
 </body>
 
 </html>

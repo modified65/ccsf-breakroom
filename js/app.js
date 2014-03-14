@@ -55,7 +55,7 @@ function carouselController($scope) {
 	var slides = $scope.slides = [];
 	$scope.addSlide = function () {
 		slides.push({
-			image: ['/images/header1.jpg', '/images/header2.jpg', '/images/header3.jpg'][slides.length % 3],
+			image: ['images/header1.jpg', 'images/header2.jpg', 'images/header3.jpg'][slides.length % 3],
 			heading1: ['Welcome to Bootstrap', 'Built With Bootstrap', 'Lorem ipsum dolor sit'][slides.length % 3],
 			heading2: ['A multipurpose Bootstrap Theme', 'And 100% Responsive', 'Curabitur viverra nulla non tel'][slides.length % 3]
 		});

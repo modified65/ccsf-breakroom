@@ -170,17 +170,21 @@ ul > li > a:hover, ul > li > a:focus {
 .contentbox-footer a {
   color: #84ccd3;
 }
-
 /* line 74, ../scss/_patterns.scss */
+.contentbox-footer a > i {
+  color: #84ccd3;
+}
+
+/* line 78, ../scss/_patterns.scss */
 .breadcrumb {
   margin-top: 25px;
 }
-/* line 76, ../scss/_patterns.scss */
+/* line 80, ../scss/_patterns.scss */
 .breadcrumb a {
   color: #5d5d5d;
 }
 
-/* line 80, ../scss/_patterns.scss */
+/* line 84, ../scss/_patterns.scss */
 .title-box {
   background: #84ccd3;
   color: white;
@@ -190,12 +194,12 @@ ul > li > a:hover, ul > li > a:focus {
   margin-bottom: 0;
 }
 
-/* line 88, ../scss/_patterns.scss */
+/* line 92, ../scss/_patterns.scss */
 .title-box em {
   color: #2a2a2a;
 }
 
-/* line 91, ../scss/_patterns.scss */
+/* line 95, ../scss/_patterns.scss */
 .title-box:after {
   content: "";
   position: absolute;
@@ -209,104 +213,98 @@ ul > li > a:hover, ul > li > a:focus {
   z-index: 1;
 }
 
-/* line 104, ../scss/_patterns.scss */
+/* line 108, ../scss/_patterns.scss */
 .title-box + .list-inline {
   margin-top: 20px;
 }
 
-/* line 108, ../scss/_patterns.scss */
+/* line 112, ../scss/_patterns.scss */
 .services {
   margin-top: 120px;
   margin-bottom: 120px;
 }
 
-/* line 114, ../scss/_patterns.scss */
+/* line 118, ../scss/_patterns.scss */
 .clients,
 .team {
   margin-top: 70px;
   margin-bottom: 120px;
 }
 
-/* line 118, ../scss/_patterns.scss */
+/* line 122, ../scss/_patterns.scss */
 .skills {
   margin-top: 50px;
   margin-bottom: 120px;
 }
 
-/* line 122, ../scss/_patterns.scss */
+/* line 126, ../scss/_patterns.scss */
 .plans {
   margin-top: 70px;
   margin-bottom: 40px;
 }
 
-/* line 126, ../scss/_patterns.scss */
+/* line 130, ../scss/_patterns.scss */
 .pricing-table {
   background: white;
   border: 1px solid whitesmoke;
   border-bottom: 7px solid whitesmoke;
   margin-bottom: 40px;
 }
-/* line 131, ../scss/_patterns.scss */
+/* line 135, ../scss/_patterns.scss */
 .pricing-table li {
   color: #2a2a2a;
   padding: 20px;
   border-bottom: 1px dotted whitesmoke;
   font-weight: bold;
 }
-/* line 137, ../scss/_patterns.scss */
+/* line 141, ../scss/_patterns.scss */
 .pricing-table .price {
   font-size: 26px;
   border-bottom: 1px dotted whitesmoke;
   margin-top: 0;
 }
-/* line 142, ../scss/_patterns.scss */
+/* line 146, ../scss/_patterns.scss */
 .pricing-table span {
   font-weight: normal;
   color: #999999;
 }
-/* line 146, ../scss/_patterns.scss */
+/* line 150, ../scss/_patterns.scss */
 .pricing-table .info {
   font-weight: normal;
   font-size: 13px;
   color: #999999;
 }
 
-/* line 152, ../scss/_patterns.scss */
+/* line 156, ../scss/_patterns.scss */
 .plans .title-box.active {
   background-color: #2a2a2a;
   -moz-box-shadow: 0 0 20px #999999;
   -webkit-box-shadow: 0 0 20px #999999;
   box-shadow: 0 0 20px #999999;
 }
-
-/* line 158, ../scss/_patterns.scss */
-.plans .title-box.active:after {
-  border-color: #2a2a2a transparent;
-}
-
 /* line 161, ../scss/_patterns.scss */
 .plans .title-box.active:after {
   border-color: #2a2a2a transparent;
 }
 
-/* line 164, ../scss/_patterns.scss */
+/* line 165, ../scss/_patterns.scss */
 .plans .title-box.active + .pricing-table {
   -moz-box-shadow: 0 0 20px #999999;
   -webkit-box-shadow: 0 0 20px #999999;
   box-shadow: 0 0 20px #999999;
 }
 
-/* line 170, ../scss/_patterns.scss */
+/* line 171, ../scss/_patterns.scss */
 .portfolio,
 .form {
   margin-bottom: 120px;
 }
 
-/* line 173, ../scss/_patterns.scss */
+/* line 174, ../scss/_patterns.scss */
 .map {
   height: 265px;
 }
-/* line 175, ../scss/_patterns.scss */
+/* line 176, ../scss/_patterns.scss */
 .map iframe {
   background-color: transparent;
   border: medium none;
@@ -315,14 +313,14 @@ ul > li > a:hover, ul > li > a:focus {
   width: 100%;
 }
 
-/* line 183, ../scss/_patterns.scss */
+/* line 184, ../scss/_patterns.scss */
 .blog-article .contentbox, .blog-article .contentbox-services, .blog-article .contentbox-footer {
   padding-bottom: 20px;
   border-bottom: 1px solid whitesmoke;
   margin-bottom: 100px;
 }
 
-/* line 188, ../scss/_patterns.scss */
+/* line 189, ../scss/_patterns.scss */
 .blog-article-date {
   background-color: #2a2a2a;
   padding: 10px;
@@ -331,7 +329,7 @@ ul > li > a:hover, ul > li > a:focus {
   border-bottom: 5px solid #5d5d5d;
   text-align: center;
 }
-/* line 195, ../scss/_patterns.scss */
+/* line 196, ../scss/_patterns.scss */
 .blog-article-date h2 {
   color: #84ccd3;
   font-size: 40px;
@@ -340,7 +338,7 @@ ul > li > a:hover, ul > li > a:focus {
   line-height: 20px;
   padding-bottom: 0;
 }
-/* line 203, ../scss/_patterns.scss */
+/* line 204, ../scss/_patterns.scss */
 .blog-article-date h3 {
   color: white;
   font-size: 20px;
@@ -349,14 +347,14 @@ ul > li > a:hover, ul > li > a:focus {
   padding-bottom: 0;
 }
 
-/* line 211, ../scss/_patterns.scss */
+/* line 212, ../scss/_patterns.scss */
 .boxed {
   padding: 35px;
   background: whitesmoke;
   border-radius: 2px;
   border: 1px solid #999999;
 }
-/* line 216, ../scss/_patterns.scss */
+/* line 217, ../scss/_patterns.scss */
 .boxed h2 {
   margin-top: 0;
 }
@@ -804,7 +802,7 @@ ul > li > a:hover, ul > li > a:focus {
   line-height: 65px;
 }
 
-/* line 57, ../scss/_carousel.scss */
+/* line 56, ../scss/_carousel.scss */
 .btn-main {
   color: white;
   text-transform: uppercase;
@@ -812,6 +810,12 @@ ul > li > a:hover, ul > li > a:focus {
   font-size: 11px;
   text-decoration: none;
   border-bottom: 4px solid #3fa7b2;
+}
+
+/* line 68, ../scss/_carousel.scss */
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  margin-top: -25px;
 }
 
 /* line 1, ../scss/_ngview.scss */

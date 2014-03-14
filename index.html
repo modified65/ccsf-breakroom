@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" ng-app="breakroomApp">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Breakroom</title>
@@ -75,11 +76,12 @@
 						<div class="contentbox-footer">
 							<h2>Latest Tweets</h2>
 							<!-- tweet content to be added later -->
-<!--
-							 <ul ng-controller="deliciousCtrl" class="list-unstyled">
-                              <li ng-repeat="entry in entries"><i class="fa fa-twitter fa-2x"></i> <a href="{{entry.u}}">{{entry.d}}</a></li>
-                            </ul>
--->
+							<ul ng-controller="deliciousController" class="list-unstyled">
+								<li ng-repeat="entry in entries">
+									<a href="{{entry.u}}">
+										<i class="fa fa-twitter fa-lg"></i>{{entry.d}}</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 					<div class="col-sm-4">
@@ -138,7 +140,9 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<p>&copy; Breakroom. All Rights Reserved.
-							<br>Created by <a href="#">Theme Armada</a></p>
+							<br>Created by
+							<a href="#">Theme Armada</a>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -150,7 +154,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
 	<script src="http://code.angularjs.org/1.2.2/angular-animate.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>	
+	<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>

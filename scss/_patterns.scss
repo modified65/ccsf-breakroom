@@ -70,6 +70,10 @@
 	a {
 		color: $turquoise;
 	}
+	
+	a>i {
+		color: $turquoise;
+	}
 }
 .breadcrumb {
 	margin-top: 25px;
@@ -154,12 +158,9 @@
 	-moz-box-shadow: 0 0 20px $gray;
 	-webkit-box-shadow: 0 0 20px $gray;
 	box-shadow: 0 0 20px $gray;
-}
-.plans .title-box.active:after {
-	border-color: $black transparent;
-}
-.plans .title-box.active:after {
-	border-color: $black transparent;
+	&:after {
+		border-color: $black transparent;
+	}
 }
 .plans .title-box.active + .pricing-table {
 	-moz-box-shadow: 0 0 20px $gray;

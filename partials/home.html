@@ -1,5 +1,14 @@
-<section>
-	<img src="http://placehold.it/1900x520" alt="Placeholder image" class="img-responsive">
+<section ng-controller="carouselController" class="carousel">
+	<carousel interval="myInterval">
+		<slide ng-repeat="slide in slides" active="slide.active">
+			<img ng-src="{{slide.image}}" class="img-responsive">
+			<div class="carousel-caption hidden-xs">
+				<h1>{{slide.heading1}}</h1>
+				<h2><i>{{slide.heading2}}</i></h2>
+				<a class="btn-main" href="#"><i class="fa fa-chevron-right"></i> See More</a>
+			</div>
+		</slide>
+	</carousel>
 </section>
 
 <section class="well">
